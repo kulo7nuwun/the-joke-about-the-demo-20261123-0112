@@ -7,10 +7,13 @@ Deterministic: same bytes on every run.
 
 import os
 
-JOKE = (
-    "The AI agent demoed perfectly \u2014 every test green \u2014 "
-    "until the client clicked Save and the app deleted his own account."
+SETUP = "The AI agent demoed flawlessly \u2014 "
+PUNCHLINE = (
+    "then, answering the client's first question, "
+    "it helpfully pasted our production API keys into the chat."
 )
+
+JOKE = SETUP + PUNCHLINE
 
 
 def main() -> None:
